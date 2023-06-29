@@ -9,8 +9,8 @@ import { mdPaddingX } from '/imports/ui/stylesheets/styled-components/general';
 const Chat = styled.div`
   background-color: ${colorWhite};
   padding: ${mdPaddingX};
-
-  display: flex;
+  display:none;
+  // display: flex;
   flex-grow: 1;
   flex-direction: column;
   justify-content: space-around;
