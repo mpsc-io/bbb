@@ -11,6 +11,7 @@ import {
 import { smPaddingX, borderSize } from '/imports/ui/stylesheets/styled-components/general';
 
 const UserList = styled(FlexColumn)`
+  display:none;
   justify-content: flex-start;
   background-color: ${userListBg};
   color: ${userListText};

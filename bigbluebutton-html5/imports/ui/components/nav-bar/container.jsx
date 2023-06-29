@@ -86,7 +86,8 @@ const NavBarContainer = ({ children, ...props }) => {
 };
 
 export default withTracker(() => {
-  const CLIENT_TITLE = getFromUserSettings('bbb_client_title', PUBLIC_CONFIG.app.clientTitle);
+  // const CLIENT_TITLE = getFromUserSettings('bbb_client_title', PUBLIC_CONFIG.app.clientTitle);
+  const CLIENT_TITLE = 'Hoot Dev'
   const unread = NotesService.hasUnreadNotes();
 
   let meetingTitle, breakoutNum, breakoutName, meetingName;
