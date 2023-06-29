@@ -176,24 +176,25 @@ class Base extends Component {
     if (Session.equals('layoutReady', true) && (sidebarContentPanel === PANELS.NONE || Session.equals('subscriptionsReady', true))) {
       if (!checkedUserSettings) {
         if (getFromUserSettings('bbb_show_participants_on_login', Meteor.settings.public.layout.showParticipantsOnLogin) && !deviceInfo.isPhone) {
-          if (isChatEnabled() && getFromUserSettings('bbb_show_public_chat_on_login', !Meteor.settings.public.chat.startClosed)) {
-            layoutContextDispatch({
-              type: ACTIONS.SET_SIDEBAR_NAVIGATION_IS_OPEN,
-              value: true,
-            });
-            layoutContextDispatch({
-              type: ACTIONS.SET_SIDEBAR_CONTENT_IS_OPEN,
-              value: true,
-            });
-            layoutContextDispatch({
-              type: ACTIONS.SET_SIDEBAR_CONTENT_PANEL,
-              value: PANELS.CHAT,
-            });
-            layoutContextDispatch({
-              type: ACTIONS.SET_ID_CHAT_OPEN,
-              value: PUBLIC_CHAT_ID,
-            });
-          } else {
+          // if (isChatEnabled() && getFromUserSettings('bbb_show_public_chat_on_login', !Meteor.settings.public.chat.startClosed)) {
+          //   layoutContextDispatch({
+          //     type: ACTIONS.SET_SIDEBAR_NAVIGATION_IS_OPEN,
+          //     value: true,
+          //   });
+          //   layoutContextDispatch({
+          //     type: ACTIONS.SET_SIDEBAR_CONTENT_IS_OPEN,
+          //     value: true,
+          //   });
+          //   layoutContextDispatch({
+          //     type: ACTIONS.SET_SIDEBAR_CONTENT_PANEL,
+          //     value: PANELS.CHAT,
+          //   });
+          //   layoutContextDispatch({
+          //     type: ACTIONS.SET_ID_CHAT_OPEN,
+          //     value: PUBLIC_CHAT_ID,
+          //   });
+          // } else 
+          // {
             layoutContextDispatch({
               type: ACTIONS.SET_SIDEBAR_NAVIGATION_IS_OPEN,
               value: true,
@@ -202,7 +203,7 @@ class Base extends Component {
               type: ACTIONS.SET_SIDEBAR_CONTENT_IS_OPEN,
               value: false,
             });
-          }
+          // }
         } else {
           layoutContextDispatch({
             type: ACTIONS.SET_SIDEBAR_NAVIGATION_IS_OPEN,
