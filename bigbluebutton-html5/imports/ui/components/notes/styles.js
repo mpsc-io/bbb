@@ -9,7 +9,8 @@ import CommonHeader from '/imports/ui/components/common/control-header/component
 const Notes = styled.div`
   background-color: ${colorWhite};
   padding: ${mdPaddingX};
-  display: flex;
+  display: none;
+  // display: flex;
   flex-grow: 1;
   flex-direction: column;
   overflow: hidden;

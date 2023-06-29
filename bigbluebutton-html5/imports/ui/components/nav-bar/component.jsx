@@ -211,10 +211,10 @@ class NavBar extends Component {
       >
         <Styled.Top>
           <Styled.Left>
-            {isExpanded && document.dir === 'ltr'
+            {/* {isExpanded && document.dir === 'ltr'
               && <Styled.ArrowLeft iconName="left_arrow" />}
             {!isExpanded && document.dir === 'rtl'
-              && <Styled.ArrowLeft iconName="left_arrow" />}
+              && <Styled.ArrowLeft iconName="left_arrow" />} */}
             {/* <Styled.NavbarToggleButton
               onClick={this.handleToggleUserList}
               color={isPhone && isExpanded ? 'primary' : 'dark'}
