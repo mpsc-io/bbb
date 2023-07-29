@@ -218,7 +218,7 @@ class JoinHandler extends Component {
           response,
           error: e,
         },
-      }, 'User faced an error on main.joinRouteHandler.');
+      }, 'User faced an error on main.joinRouteHandler: '+response.message);
     }
     this.setState({
       joined: true,
